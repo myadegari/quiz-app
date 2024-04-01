@@ -17,8 +17,7 @@ function Result({ userAnswers, questions, resetQuiz = () => { } }) {
   return (
     <div className="results">
       <h2>Results</h2>
-      <p>You answers {correct} out of {questions.length} questions
-        . {fill}</p>
+      <p>You answers {correct} out of {questions.length} questions. {fill}</p>
       <span onClick={resetQuiz}>Click here to Retry</span>
       <ul>
         {questions.map((option, index) => {
